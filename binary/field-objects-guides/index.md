@@ -35,7 +35,7 @@ Field Objects can be located in the given abin file for a 2D Field, and are stor
 > Should I link to SecreC's PE fork or not here? it's better but not the official source..... snake voice hrgngg
 
 {: .info }
-> Field abin files can be located in umd0.cpk\field2d\bg, and the contents extracted using [Amicitia](https://github.com/tge-was-taken/Amicitia) or [PersonaEditor.](https://github.com/Secre-C/PersonaEditor)
+> Field abin files can be located in `umd0.cpk\field2d\bg`, and the contents of the abin extracted using [Amicitia](https://github.com/tge-was-taken/Amicitia) or [PersonaEditor.](https://github.com/Secre-C/PersonaEditor)
 
 | File | Purpose |
 |----|----|
