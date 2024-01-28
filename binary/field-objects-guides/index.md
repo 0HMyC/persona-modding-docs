@@ -41,9 +41,9 @@ Field Objects can be located in the given abin file for a 2D Field, and are stor
 |----|----|
 | h00_00.dat | Defines the ID and position of Hit Objects. |
 | h00_00_name.dat | Defines the text that will appear when hovering over a Hit Object. |
-| h00_00_pck.dat | Defines the Hit Object ID to load, [Flowscript Procedure](../../persona-modding-docs/flowscript/) to call, and Icon to display for the Hit Object. |
+| h00_00_pck.dat | Defines the Hit Object ID to load, [Flowscript Procedure](/persona-modding-docs/flowscript/) to call, and Icon to display for the Hit Object. |
 | n00_00.dat | Defines the ID and position of NPC Objects. |
-| n00_00_pck.dat | Defines the NPC Object ID to load position from, which sprite to use, [Flowscript Procedure](../../persona-modding-docs/flowscript/) to call, and a bitflag that if enabled will hide the NPC Object. |
+| n00_00_pck.dat | Defines the NPC Object ID to load position from, which sprite to use, [Flowscript Procedure](/persona-modding-docs/flowscript/) to call, and a bitflag that if enabled will hide the NPC Object. |
 | n00_00_tbl.dat | Defines the "groups" of NPC Objects to load from n00_00_pck.dat, on which in-game date and time. |
 
 ## Required Tools
