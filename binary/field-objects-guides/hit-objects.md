@@ -73,7 +73,7 @@ Go to offset `0x1C8`, and paste (Ctrl+V) the bytes we copied. You should now hav
 
 ![]({%link assets/images/binary/field-objects-guides/h07_02_name_copied.png %})
 
-Click at the start of the second `Sign-In Sheet` block which is highlighted in red. Make sure you click inside the "Decoded text" section on the right, as this will allow us to normally type in the text we want to add.
+Click at the start of the first `Sign-In Sheet` block, above the duplicate. Make sure you click inside the "Decoded text" section on the right, as this will allow us to normally type in the text we want to add.
 
 ![]({%link assets/images/binary/field-objects-guides/h07_02_name_copied_clickherebad.png %})
 
@@ -81,8 +81,36 @@ From here, simply write what you want the name of your object to be. For this gu
 
 ![]({%link assets/images/binary/field-objects-guides/h07_02_name_finished.png %})
 
-We have successfully added a new name for our custom Hit Object to use.
+{: .warning}
+> Make sure you are saving your files by navigating to File -> Save As; this ensures you'll keep the original files unmodified, allowing you to more easily go back and start over if you make a mistake.
+
+Save the changes to a new file in a seperate location (see above warning), and we have successfully added a new name for our custom Hit Object to use.
 
 ### Defining our Object
 
-Now, we're going to define what BF procedure and icon our Object should have in-game.
+Now, we're going to define what BF procedure and ID our Object should have in-game. To start, open `h07_02_pck.dat` in HxD. Next, select `0x4` bytes from offset `0x4`, and using the data inspector, edit the value from 7 to 8.
+
+![]({%link assets/images/binary/field-objects-guides/h07_02_pck.png %})
+
+![]({%link assets/images/binary/field-objects-guides/h07_02_pck_editcnt.png %})
+
+Select `0x10` bytes from offset `0x58` as shown below, and copy the selected bytes. Then, paste them directly after the selected bytes. Your view should now look like the second image.
+
+![]({%link assets/images/binary/field-objects-guides/h07_02_pck_copysel.png %})
+
+![]({%link assets/images/binary/field-objects-guides/h07_02_pck_copied.png %})
+
+Next, edit the bytes underlined below so that the values are `06` and `18` respectively. What we're doing here is telling the game that our object has the ID of 6, and that it should call procedure `0x18` (24 in decimal) from the `h07_02.bf` file when interacted with.
+
+![]({%link assets/images/binary/field-objects-guides/h07_02_pck_finished.png %})
+
+Save the file, and we have now defined the Script Procedure and ID of our object.
+
+### Placing our Object
+
+Finally, we are going to specify the position of our custom object in the field. For this guide, we will set our object at the coordinates X:200 Y:200, as a means of both ensuring we can set positions and that we won't possibly place our object right on top of another one accidentally.
+
+
+
+{: .info}
+> If you don't know how to replace files using Persona Essentials, see [the "Replacing Files" page.](/persona-modding-docs/getting-started/replacing-files)
